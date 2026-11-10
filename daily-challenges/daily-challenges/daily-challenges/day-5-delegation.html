@@ -1,0 +1,7 @@
+<ul id="list"><li>One <button class="del">X</button></li><li>Two <button class="del">X</button></li></ul>
+<script>
+  const list = document.getElementById("list");
+  list.addEventListener("click", (e) => {
+    if (e.target.classList.contains("del")) e.target.closest("li").remove();
+  });
+</script>
