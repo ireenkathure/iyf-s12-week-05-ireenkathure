@@ -1,0 +1,8 @@
+<button id="plus">+</button><span id="count">0</span>
+<script>
+  let n = 0;
+  const count = document.getElementById("count");
+  document.getElementById("plus").addEventListener("click", () => {
+    n++; count.textContent = n;
+  });
+</script>
