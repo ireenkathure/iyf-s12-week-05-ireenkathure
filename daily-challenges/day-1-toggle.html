@@ -1,0 +1,9 @@
+<!-- Day 1: Toggle highlight with classList -->
+<button id="btn">Toggle</button>
+<p id="text">Hello</p>
+<script>
+  const btn = document.getElementById("btn");
+  const text = document.getElementById("text");
+  btn.addEventListener("click", () => text.classList.toggle("highlight"));
+</script>
+<style>.highlight{background:yellow}</style>
