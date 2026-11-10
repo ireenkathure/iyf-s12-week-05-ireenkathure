@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Practice - Ireen Kathure</title>
+  <style>
+    .highlight { background: yellow; }
+    .accent { color: purple; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DOM Practice</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article data-id="article-1" data-category="tutorial">
+      <h2>Learning the DOM</h2>
+      <p class="content">First paragraph about the DOM.</p>
+      <p class="content">Second paragraph about selectors.</p>
+      <p>Last paragraph in the article.</p>
+    </article>
+
+    <section>
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="email" name="email" placeholder="Your email">
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Injection Demo</h2>
+      <p>Unsafe (innerHTML): <span id="unsafe"></span></p>
+      <p>Safe (textContent): <span id="safe"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer - Ireen Kathure Week 5</p>
+  </footer>
+
+  <script src="dom.js"></script>
+</body>
+</html>
