@@ -1,0 +1,12 @@
+<input id="in"><button id="add">Add</button><ul id="list"></ul>
+<script>
+  const input = document.getElementById("in");
+  const list = document.getElementById("list");
+  document.getElementById("add").addEventListener("click", () => {
+    if (!input.value.trim()) return;
+    const li = document.createElement("li");
+    li.textContent = input.value.trim();
+    list.append(li);
+    input.value = "";
+  });
+</script>
